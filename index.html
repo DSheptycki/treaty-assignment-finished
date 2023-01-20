@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+
+    <!--Linking External CSS File to index.html-->
+    <link rel="stylesheet" href="style-sheets/main.css" />
+    <style>
+      /*paragraph styled in internal style sheet because its only intended to affect this webpage.*/
+      p {
+        font-size: 2rem;
+      }
+      /* Styling for the 3 treaty description cards */
+      .treaty-description-card {
+        background-color: #def5e5;
+        margin: 5px 0px;
+        width: 30%;
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin: 0px 0px;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.87);
+      }
+      /* Styling for the panel which holds the 3 treaty description cards */
+      #treaty-description-panel {
+        background-color: #def5e5;
+        color: rgba(0, 0, 0, 0.87);
+        height: 320px;
+      }
+      /*styling for the map showing the treaty land covered*/
+      #treaty-map {
+        border: 5px solid #333;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navigation Bar-->
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="treaty-terms.html">Treaty Details</a></li>
+        <li><a href="treaty-today.html">Treaty Today</a></li>
+      </ul>
+    </nav>
+
+    <!--Background image, used ID because there will only be 1 background image-->
+    <span id="main-image">
+      <img
+        src="images/background-image.jpg"
+        alt="Landscape of assiniboine river in late autmnn, covers wholebackground of website." />
+    </span>
+
+    <!--Text overlapping background image in header tag-->
+    <header>
+      <h1 id="title-text">Treaty No.1</h1>
+      <p id="title-description">1871 - Present</p>
+    </header>
+
+    <!--Black bar to divide the content-->
+    <div class="divider" style="margin-top: 5px"></div>
+
+    <!--Main containing all content related to the numbered treatys.-->
+    <main>
+      <!--Contains 3 Div's describing What the 1st treaty was and where/who it was signed by-->
+      <section id="treaty-description-panel">
+        <!--Div describing what the 1st treaty was-->
+        <div class="treaty-description-card">
+          <h2>What is treaty one?</h2>
+          <p>
+            A Solem agreement between two peoples, but its more than that. Its a
+            living document that does and will always affect the lives of
+            canadians as it constantly binds them in an agreement. The first
+            treaty layed a path towards the future that we live in today and
+            will always be remembered as a massive step towards a better more
+            inclusive Canada.
+          </p>
+        </div>
+        <!--Div containing a image of the land treaty 1 covers.-->
+        <div class="treaty-description-card">
+          <img
+            src="images/treaty-one.png"
+            id="treaty-map"
+            width="100%"
+            alt="Map showing what land the 1st and 2nd treaty coveres in manitoba"
+            onclick="expandImg()"
+            onkeydown="expandImg()"
+            tabindex="0" />
+        </div>
+        <!--Div describing where/who the treaty was signed by-->
+        <div class="treaty-description-card right">
+          <h2>The signing of the treaty.</h2>
+          <p>
+            The first of the numbered treaty's was signed in Lower Fort Garry,
+            on the 3rd of August 1871 between Canada, the Anishinabek and the
+            Swampy Cree of southern Manitoba. This treaty was signed in the
+            sprit of peace and promised the first nations people their outside
+            promises in exchange for sharing their land.
+          </p>
+        </div>
+      </section>
+
+      <!--Black bar to divide the content-->
+      <div class="divider" style="border-bottom: 5px solid #333"></div>
+    </main>
+    <footer id="footer">
+      <a
+        href="https://treaty1.ca/"
+        class="link"
+        style="color: rgba(255, 255, 255, 0.6)"
+        target="_blank"
+        >Click this link to go to the treaty one website (Source 1)</a
+      >
+      <br />
+      <a
+        href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+        class="link"
+        style="color: rgba(255, 255, 255, 0.6)"
+        target="_blank"
+        >Click this link to go to the TheCanadianEncyclopedia website (Source
+        2)</a
+      >
+      <br />
+      <a
+        href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/"
+        class="link"
+        style="color: rgba(255, 255, 255, 0.6)"
+        target="_blank"
+        >Click this link to go to winnipeg vital sings website (Source 3)</a
+      >
+      <button onclick="resetImg()" style="float: right">Reset Image</button>
+    </footer>
+    <!--Javascript to expand the treaty map image-->
+    <script>
+      // Get the img object using its Id
+      img = document.getElementById("treaty-map");
+
+      function expandImg() {
+        // Set image size to 1.5 times original
+        img.style.transform = "scale(1.5)";
+        // Animation effect
+        img.style.transition = "transform 0.25s ease";
+        imgExpanded = true;
+      }
+      // Function to reset image size
+      function resetImg() {
+        // Set image size to original
+        img.style.transform = "scale(1)";
+        img.style.transition = "transform 0.25s ease";
+        imgExpanded = false;
+      }
+    </script>
+  </body>
+</html>

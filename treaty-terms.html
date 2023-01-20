@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Treaty Terms</title>
+    <link rel="stylesheet" href="style-sheets/main.css" />
+    <style>
+      body {
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#faffd1),
+          to(#a1ffa9)
+        );
+        background-image: -webkit-linear-gradient(top, #faffd1, #a1ffa9);
+        background-image: -moz-linear-gradient(top, #faffd1, #a1ffa9);
+        background-image: -o-linear-gradient(top, #faffd1, #a1ffa9);
+        background-image: -webkit-gradient(
+          linear,
+          left top,
+          left bottom,
+          from(#faffd1),
+          to(#a1ffa9)
+        );
+        background-image: linear-gradient(to bottom, #faffd1, #a1ffa9);
+        background-repeat: no-repeat;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+      /*Styling for the title card*/
+      #title-card {
+        padding-left: 20px;
+        background-color: #e5d9b6;
+        border: 3px solid #a4be7b;
+        margin: 10px;
+        width: 20%;
+        margin-left: 39%;
+        text-align: center;
+      }
+      /* styling for all cards containing real content (all other cards besides title) */
+      .content-card {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #e5d9b6;
+        border: 3px solid rgb(164, 190, 123);
+        margin: 10px;
+        width: 20%;
+        text-align: center;
+        float: left;
+      }
+      /* Left content card */
+      #left {
+        margin-left: 15%;
+      }
+      /* Right content card */
+      #right {
+        margin-left: 26%;
+      }
+      /* Bottom 4 content cards */
+      .content-card sub {
+        margin-top: 20px;
+        margin-left: 2%;
+      }
+      /* First nations outside promises card */
+      #fnations-outside-promises {
+        /* creating padding in bottom of card to match the size of the biggest card */
+        padding-bottom: 61px;
+      }
+      /*First informational card for canada styling*/
+      #canada-first-card {
+        /* Increasing margin on the left from 2% - 3% to create a little more space enbetween First Nation's cards and Canada's cards */
+        margin-left: 3%;
+        padding-bottom: 60px;
+      }
+      /*Image for splitting content*/
+      .content-splitter {
+        /* Offsets the image 16.8% to the right by creating a margin to its left */
+        margin-left: 16.8%;
+        /* floats left so another image can align beside it */
+        float: left;
+        width: 230px;
+      }
+      #footer {
+        margin-top: 800px;
+        border-top: 5px solid #a4be7b;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="treaty-terms.html">Treaty Details</a></li>
+        <li><a href="treaty-today.html">Treaty Today</a></li>
+      </ul>
+    </nav>
+    <header id="title-card">
+      <h1>Treaty Details</h1>
+      <p>Details of the first treaty and the parties involved.</p>
+    </header>
+    <main>
+      <section>
+        <div class="content-card" id="left">
+          <h2>First Nations</h2>
+          <p>
+            The signatories for the Anishinaabe and the Swampy Cree were: Red
+            Eagle; Bird Forever ; Flying Down Bird ; Centre of Bird’s Tail;
+            Flying Round ; Whip-poor-will); and Yellow Quill.
+          </p>
+        </div>
+        <div class="content-card" id="right">
+          <h2>Canada</h2>
+          <p>
+            The signatories for the Canadians were, government agents
+            Lieutenant-Governor Adams G. Archibald, Commissioner Simpson, Major
+            A.G. Irvine, and eight witnesses.
+          </p>
+        </div>
+      </section>
+      <!--Section that contains 2 content splitters, splitting First Nations and Canada into 4 different cards-->
+      <section>
+        <!--Content Splitter Image (no alt text so it gets skipped by an screen reader)-->
+        <img src="images/section-divider.png" class="content-splitter" alt="" />
+
+        <!--Content Splitter Image (no alt text so it gets skipped by an screen reader)-->
+        <img
+          src="images/section-divider.png"
+          class="content-splitter"
+          style="margin-left: 36%"
+          alt="" />
+      </section>
+      <!--Section containing all content cards for First Nations and Canada treaty details-->
+      <section>
+        <!--Outside Promises for First Nations-->
+        <div class="content-card sub" id="fnations-outside-promises">
+          <h2>Outside Promises</h2>
+          <p>
+            Provision of animals such as bulls, cows, boars, and sows, and
+            equipment such as plows and harrows, and buggies. In addition, the
+            annuity in Treaties 1 and 2 was raised from three to five dollars
+            per year. Goverment tax is not allowed to be administered on
+            reserves, as well as the indegenous citizens are not able to be
+            drafted for canadian wars. -
+            <a
+              href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+              target="_blank"
+              >TheCanadianEncyclopedia</a
+            >
+          </p>
+        </div>
+        <!--Written Terms for First Nations-->
+        <div class="content-card sub" style="padding-bottom: 20px">
+          <h2>Written Terms</h2>
+          The Governor General in Council formally ratified the treaty on 12
+          September 1871. Each band was to receive a reserve large enough to
+          provide 160 acres for each family of five (or in like proportion for
+          smaller or larger families). Each man, woman, and child was to be
+          given a gratuity — or one-time payment — of three dollars, and a
+          yearly annuity totalling $15 per family of five. The government also
+          agreed to maintain a school on each reserve and to prohibit the
+          introduction or sale of liquor on reserves. -
+          <a
+            href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+            target="_blank"
+            >TheCanadianEncyclopedia</a
+          >
+        </div>
+        <!--Advantages for Canada-->
+        <div class="content-card sub" id="canada-first-card">
+          <h2>Advantages</h2>
+          <p>
+            The numbered treaty one gave Canada more land and more resources to
+            expand upon legally. It created a eaiser way for people to advance
+            as a society aswell as progressing the social and economic state of
+            canadians and their partnership with the first nations peoples. With
+            the first treaty signed Canada moved closer towards connecting the
+            east and west coast of north america.
+          </p>
+        </div>
+        <!--Land Shared for Canada-->
+        <div class="content-card sub" style="padding-bottom: 98px">
+          <h2>Land Shared</h2>
+          <p>
+            The land encompassed by Treaty 1 includes Winnipeg, Brandon, Portage
+            La Prairie, Selkirk, Steinbach, Grand Beach, Emerson, Winkler and
+            many more. The land in treaty one covers approximately 49729 Km^2
+            but this is an extremely rough estimate as there is minimal
+            information on the size that treaty one land covers.
+          </p>
+        </div>
+      </section>
+    </main>
+    <footer id="footer">
+      <a
+        href="https://treaty1.ca/"
+        class="link"
+        style="color: rgba(255, 255, 255, 0.6)"
+        target="_blank"
+        >Click this link to go to the treaty one website (Source 1)</a
+      >
+      <br />
+      <a
+        href="https://www.thecanadianencyclopedia.ca/en/article/treaties-1-and-2"
+        class="link"
+        style="color: rgba(255, 255, 255, 0.6)"
+        target="_blank"
+        >Click this link to go to the TheCanadianEncyclopedia website (Source
+        2)</a
+      >
+      <br />
+      <a
+        href="https://www.winnipegvitalsigns.org/vital-information/treaty-1/"
+        class="link"
+        style="color: rgba(255, 255, 255, 0.6)"
+        target="_blank"
+        >Click this link to go to winnipeg vital sings website (Source 3)</a
+      >
+    </footer>
+  </body>
+</html>

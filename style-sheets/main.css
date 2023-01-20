@@ -1,0 +1,127 @@
+/*Sets font size so rem is able to be used instead of px which makes the website more accessible*/
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+/*Targets whole body, removing the 10px margin along the side, setting the background colour to a linear gradient of light green to darker green,
+font family is serif, text colour is dark green.*/
+body {
+  height: 100%;
+  margin: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 1.6rem;
+  line-height: 2.24rem;
+  letter-spacing: normal;
+  color: #285430;
+}
+
+/* Navigation Bar */
+nav ul {
+  /*Removes the bullet points*/
+  list-style-type: none;
+  /*Sets the margin (space around the element) to 0 */
+  margin: 0;
+  /*Sets the padding (space inside the element) to 0 */
+  padding: 0;
+  overflow: hidden;
+
+  /*background colour is set*/
+  background-color: #2c2c2c;
+
+  /*Creates a small border (space bordering the object) on the bottom of the navigation bar */
+}
+nav ul li {
+  /* floats the links next to each other aligning them left of one another */
+  float: left;
+  /* Sets the size of the text link */
+  font-size: 2rem;
+}
+nav ul li a {
+  /* Sets the object to display as inline-block so that they align properly with each other */
+  display: inline-block;
+  /* Sets the text color */
+  color: rgba(255, 255, 255, 0.87);
+  /* aligns the text to the center of the box */
+  text-align: center;
+  /* creates padding inside the box */
+  padding: 14px 16px;
+  text-decoration: none;
+  /* Transition for when link is hovered */
+  -o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -moz-transitions: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -webkit-transition: background-color 0.35s ease-in-out,
+    color 0.35s ease-in-out;
+  -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+  transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+/* When the link is being hovered over with a mouse or a screen reader it inverts text and background color */
+nav a:hover,
+nav a:focus {
+  color: #2c2c2c;
+  background-color: rgba(255, 255, 255, 0.87);
+}
+
+/*Background Image*/
+#main-image img {
+  width: 100%;
+  /*Makes the image dimmer*/
+  -webkit-filter: brightness(50%);
+  filter: brightness(50%);
+}
+
+/*Positions the title text over the background image*/
+#title-text {
+  /*Position is set to abesolute so it is able to be transformed*/
+  position: absolute;
+  /*Positions the text in the abesolute center*/
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
+  /* Text shadow to emphasize Title Text */
+  text-shadow: #2c2c2c 4px 4px 0px;
+  /* sets text color */
+  color: rgba(255, 255, 255, 0.87);
+  /* bolds the text */
+  font-weight: bold;
+  /* sets font size */
+  font-size: 5rem;
+  /* underlines the text and offsets the underline so its further below the text than usual */
+  -webkit-text-decoration-line: underline;
+  -moz-text-decoration-line: underline;
+  text-decoration-line: underline;
+  text-underline-offset: 1.5rem;
+}
+/* Positions title description under title text and over background image */
+#title-description {
+  /*Positions the text in the center of the horizontal axis*/
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  /* sets the text slightly below the title */
+  top: 62%;
+  left: 50%;
+  /* changes the text colour and bolds it */
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: bold;
+}
+/*divider (not too much going on here)*/
+.divider {
+  height: 50px;
+  background-color: #def5e5;
+}
+/* Footer */
+#footer {
+  bottom: 0;
+  background-color: #202020;
+  height: 70px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
